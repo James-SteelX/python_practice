@@ -10,3 +10,10 @@ def test_for_landing_plane():
     plane = Plane()
     airport.clear_landing(plane)
     assert len(airport.apron) == 1
+
+def test_for_plane_take_off():
+    airport = Airport()
+    plane = Plane()
+    airport.clear_landing(plane)
+    airport.allow_takeoff(plane)
+    assert len(airport.apron) == 0

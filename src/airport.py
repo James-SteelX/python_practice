@@ -5,3 +5,6 @@ class Airport(object):
 
     def clear_landing(self, plane):
         self.apron.append(plane)
+
+    def allow_takeoff(self, plane):
+        self.apron.pop()
